@@ -12,7 +12,7 @@ function lowerCaseDrivers(drivers) {
 
 function nameToAttributes(drivers) {
   return drivers.map(function(driver) {                                //return drivers.map will make new array for changed values
-    names = driver.split(" ")                                           //split is used to split the string into 2 values in an array
+    names = driver.split(" ")                                           //split is used to split the string into 2 strings in an array
     return Object.assign({},{firstName: names[0], lastName: names[1]})    //Object.assign will create first & last name key &
   })                                                                      //values based upon index number of names array
 }                                                                    //have {} in Object.assign but really don't need bc map puts in new array
