@@ -7,9 +7,12 @@ function lowerCaseDrivers(drivers) {
 function nameToAttributes(drivers) {
   return drivers.map(function(driver) {
     let name = driver.split(" ")
-    console.log(name)
+    //console.log(name)
     return Object.assign({firstName: name[0], lastName: name[1]})
-    
   })
+}
 
+function attributesToPhrase(drivers) {
+  return drivers.map(function(driver)
+return `${driver.name} is from ${driver.hometown}`)
 }
